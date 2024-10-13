@@ -19,6 +19,8 @@ from cgitb import handler
 from django.contrib import admin
 from django.urls import path,include
 from women.views import page_not_found
+from women import views
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
