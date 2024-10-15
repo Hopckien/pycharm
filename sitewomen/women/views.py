@@ -7,15 +7,14 @@ from django.template.loader import render_to_string
 menu = ["О сайте","Добавить статью","Обратная связь","Войти"]
 
 
-# Create your views here.
 def index(request):
     # t = render_to_string('women/index.html')
     # return HttpResponse(t)
     data = {
         'title': 'Главная страница',
         'menu': menu,
+        'float':26.65,
     }
-
     return render(request, 'women/index.html',context=data)
 
 def about(request):
