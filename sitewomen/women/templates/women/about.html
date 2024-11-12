@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <title>{{ title }}</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block content%}
+{% include 'women/includes/nav.html' %}
 <h1>{{ title }}</h1>
-<p>{{ menu }}</p>
-</body>
-</html>
+{% endblock %}
+
